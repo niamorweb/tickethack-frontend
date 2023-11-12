@@ -7,7 +7,7 @@ let boxTrip = document.querySelector("#box_trip");
 console.log(boxNoTrip);
 console.log(boxTrip.classList);
 function handleFetchData() {
-  fetch(`https://tickethack-backend-rmxpiwzq8-niamordev.vercel.app/orders`)
+  fetch(`https://tickethack-backend-2j1xnghbb-niamordev.vercel.app/orders`)
     .then((response) => response.json())
     .then((data) => {
       let price = 0;
@@ -70,7 +70,7 @@ function handleDeleteBtn(data) {
   let idToSend = data._id;
 
   fetch(
-    `https://tickethack-backend-rmxpiwzq8-niamordev.vercel.app/${idToSend}`,
+    `https://tickethack-backend-2j1xnghbb-niamordev.vercel.app/${idToSend}`,
     {
       method: "DELETE",
 
@@ -88,7 +88,7 @@ function handleDeleteBtn(data) {
 
 purchaseBtn.addEventListener("click", () => {
   fetch(
-    "https://tickethack-backend-rmxpiwzq8-niamordev.vercel.app/orders/validate",
+    "https://tickethack-backend-2j1xnghbb-niamordev.vercel.app/orders/validate",
     {
       method: "PUT",
       headers: {

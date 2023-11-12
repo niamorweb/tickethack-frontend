@@ -18,7 +18,7 @@ submitBtn.addEventListener("click", (event) => {
   let dateValue = dateInput.value;
 
   fetch(
-    `https://tickethack-backend-rmxpiwzq8-niamordev.vercel.app/${departureValue}/${arrivalValue}`
+    `https://tickethack-backend-2j1xnghbb-niamordev.vercel.app/${departureValue}/${arrivalValue}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -76,7 +76,7 @@ function handleBookBtn(data) {
     isValidate: false,
   };
 
-  fetch("https://tickethack-backend-rmxpiwzq8-niamordev.vercel.app/orders", {
+  fetch("https://tickethack-backend-2j1xnghbb-niamordev.vercel.app/orders", {
     method: "POST",
 
     headers: { "Content-Type": "application/json" },

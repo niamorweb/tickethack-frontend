@@ -2,7 +2,7 @@ let bookContainer = document.querySelector("#container_trip_book");
 let boxNoTrip = document.querySelector("#box_no_trip_booked");
 let boxTrip = document.querySelector("#box_trip_booked");
 
-fetch(`https://tickethack-backend-rmxpiwzq8-niamordev.vercel.app/orders/booked`)
+fetch(`https://tickethack-backend-2j1xnghbb-niamordev.vercel.app/orders/booked`)
   .then((response) => response.json())
   .then((data) => {
     // console.log(data.allTrips);
